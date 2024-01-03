@@ -1,0 +1,275 @@
+
+*******************
+Looping Assignment
+*******************
+
+*************************************************************************************
+Program-1 Write a program to print all natural numbers from 1 to n.
+
+Solution-1
+
+import java.util.Scanner;
+class Natural_Number
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter The Starting Number : ");
+		int s =input.nextInt();
+		System.out.print("Enter The Ending Number : ");
+		int e =input.nextInt(); 
+		while(s<=e)
+		{
+			System.out.println(s);
+			s++;
+		}
+	}
+
+}
+
+Output
+Enter The Starting Number : 1
+Enter The Ending Number : 10
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+
+*************************************************************************************
+Program-2- Write a program to print tables.
+
+Solution-2
+
+import java.util.Scanner;
+class Tables
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter The Starting Number : ");
+		int s =input.nextInt();
+		System.out.print("Enter The Ending Number : ");
+		int e =input.nextInt();
+		System.out.print("Enter The Tables Number : ");
+		int t =input.nextInt(); 
+		while(s<=e)
+		{
+			System.out.println(s+" * "+t+" = "+(s*t));
+			s++;
+		}
+	}
+}
+
+
+Output-
+
+Enter The Starting Number : 1
+Enter The Ending Number : 10
+Enter The Tables Number : 3
+1 * 3 = 3
+2 * 3 = 6
+3 * 3 = 9
+4 * 3 = 12
+5 * 3 = 15
+6 * 3 = 18
+7 * 3 = 21
+8 * 3 = 24
+9 * 3 = 27
+10 * 3 = 30
+
+*************************************************************************************
+Program-3- Write a program to find the factorial value of any number.
+
+Solution-3
+
+import java.util.Scanner;
+class Factorial
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter Factorial Number : ");
+		int num = input.nextInt();
+		int fact = 1;
+		for(int i=1; i<=num; i++)
+		{
+			fact *= i;
+		}        
+		System.out.println("Factorial: "+ fact);		
+	}
+}
+
+Output
+Enter Factorial Number : 5
+Factorial: 120
+*************************************************************************************
+Program-4- Write a program to reverse the given Digits.
+
+Solution-4
+
+import java.util.Scanner;
+class Digits_Reverse
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);        
+		System.out.print("Enter the Digits :");
+		int num = input.nextInt(); 
+		int a = num;
+		int rev = 0;
+		int rem = 0;        
+		while(num>0)
+		{
+			rem = num % 10;
+			rev = rev * 10 + rem;
+			num /= 10;
+		}
+		System.out.println("Given Digits :" + a);
+		System.out.println("Reverse Digits :" + rev);
+	}
+}
+Output
+Enter the Digits :345785
+Given Digits :345785
+Reverse Digits :587543
+*************************************************************************************
+Program-5- Write a program to Check Whether a Given Number is Prime or Not.
+
+Solution-5
+
+import java.util.Scanner;
+class Prime_Numbe
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);        
+		System.out.print("Enter the Number :");
+		int num = input.nextInt(); 
+		int i, count = 0;
+		for(i=2; i<num; i++)
+		{
+			if(num%i == 0)
+			{
+				count++;
+				break;
+			}
+		}
+		if(count==0)
+			System.out.println("This is a Prime Number.");
+		else
+			System.out.println("This is not a Prime Number.");
+	}
+}
+Output
+Enter the Number :71
+This is a Prime Number.
+*************************************************************************************
+Program-6- Write a Program to check Armstrong numbers or Not.
+
+Solution-6
+
+import java.util.Scanner;
+public class Check_Armstrong {
+	public static void main(String[] args)
+	{
+ 
+        Scanner input = new Scanner(System.in);		
+        System.out.print("Enter The Number : ");
+        int n = input.nextInt();
+		int rem,t = n,p = 0;
+		while (n > 0) 
+		{
+			rem = n % 10;
+			p = p + (rem * rem * rem);
+			n = n / 10;
+		}
+		if (t == p) {
+			System.out.println(p+" is Armstrong Number");
+		}
+		else {
+			System.out.println(p+" is Not an Armstrong Number");
+		}
+	}
+}
+ 
+Output
+Enter The Number : 371
+371 is Armstrong Number
+*************************************************************************************
+Program-7- Write a Program to Check Given Number is a Palindrome or Not.
+
+Solution-7
+
+import java.util.Scanner;
+class Palindrome_Number
+{
+	public static void main (String[]args)
+	{
+		Scanner input = new Scanner(System.in);
+		System.out.print("Enter The Digits :");
+		int num = input.nextInt();
+		int rev = 0, rem, temp;
+		temp = num;
+		while (num != 0)
+		{
+			rem = num % 10;
+			rev = rev * 10 + rem;
+			num /= 10;
+		};
+ 
+		if (temp == rev)
+			System.out.println (temp + " is Palindrome");
+		else
+			System.out.println (temp + " is not Palindrome");
+	}
+}
+Output
+Enter The Digits :68586
+68586 is Palindrome
+
+Enter The Digits :67587
+67587 is not Palindrome
+*************************************************************************************
+Program-8- Write a program to print fibonacci series upto n terms.
+
+Solution-8
+
+import java.util.Scanner;
+class Fibonacci
+{
+	public static void main(String args[])
+    {
+        Scanner input = new Scanner(System.in);		
+        System.out.print("Enter The Fibonacci Number : ");
+        int num = input.nextInt();
+		int a=0, b=1, c=0, i;		
+        System.out.println("Fibonacci Numbers ... ");
+		for(i=1; i<=num; i++)
+		{
+		   System.out.println(c);
+			a = b;
+			b = c; 
+			c = a + b; 
+		}
+     }
+}
+Output
+Enter The Fibonacci Number : 10
+Fibonacci Numbers ...
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
+
