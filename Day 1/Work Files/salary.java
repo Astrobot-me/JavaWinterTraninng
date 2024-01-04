@@ -18,8 +18,8 @@ class Employee {
         float suresh = data.getPayment(preTax_suresh,Hours_suresh);
         float ram = data.getPayment(preTax_Ram,Hours_ram);
 
-        System.out.println("Salary of Suresh Before Tax "+suresh);
-        System.out.println("Salary of Ram Before Tax "+ram);
+        System.out.println("Salary of Suresh Before Tax "+suresh+ " $");
+        System.out.println("Salary of Ram Before Tax "+ram+ " $");
 
         System.out.println("\n"); 
        
