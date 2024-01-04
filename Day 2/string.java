@@ -39,13 +39,33 @@ class Strdemo {
         
 
         Scanner sc = new Scanner(System.in);
+
         System.out.println("Enter the String: ");
+
         String r = "";
-        r = sc.nextLine();
-        System.out.println("Hello "+r.toUpperCase()+ " , Hope you doing well !");
+        String v = "";
+
+        r = sc.nextLine();//whole line
+        v = sc.next();//single word
+
+        String output_format = "Hello "+r.toUpperCase()+ " , Hope you doing well !";
+        System.out.println(output_format + " " + v);
+
+
+
+        char array[] = r.toCharArray();
+        // System.out.println(array);
+
+        for(int i=0;i<array.length;i++){
+            System.out.println(array[i]);
+        }
+
+        System.out.println("Found at "+ output_format.lastIndexOf(r.toUpperCase()));
+
 
         String x = st.setUp();
         String y = st.setDn();
+        
         System.out.println(x);
         System.out.println(y);
 
