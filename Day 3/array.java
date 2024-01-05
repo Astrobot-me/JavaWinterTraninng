@@ -18,5 +18,10 @@ class array {
             System.out.println(data.a[i]);
             
         }
+        
+        System.out.println("Elements of the Array are from Foreach loop: ");
+        for(int i:data.a){
+            System.out.println(i);
+        }
     }
 }
