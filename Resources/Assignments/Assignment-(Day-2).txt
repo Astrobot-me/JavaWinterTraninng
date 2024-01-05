@@ -1,0 +1,48 @@
+******************************
+Programming Assignment (Day-2)
+******************************
+
+1. Write a Java program to get the character at the given index within the string.
+
+      Hint- Use charAt() method of Strign class.
+
+2- Write a Java program to compare two strings lexicographically, ignoring case differences.
+
+      Hint-  Use compareToIgnoreCase() method of String class.
+
+3- Write a Java program to concatenate a given string to the end of another string.
+
+      Hint-  Use concat() method of String class.
+
+4- Write a Java program to replace a specified character with another character.
+
+      Hint- Use replace() method of String class.
+
+5- Write a Java program to reverse a string.
+
+6- Write a constructor in the Car class given below that initializes the brand class field with the string “Ford”.
+
+    class Car {
+
+	String brand;
+	
+	//your constructor here      <-------- Write code here
+	
+	public String getBrand() {
+		return brand;
+	}
+
+	void run() {
+		System.out.println("Car is running...");
+	}
+}
+
+public class Sample {
+	
+	public static void main(String[] args) {
+
+				Car ford = new Car();			
+	}
+}
+
+7- Write a program to print the names of students by creating a Student class. If no name is passed while creating an object of Student class, then the name should be "Unknown", otherwise the name should be equal to the String value passed while creating object of Student class.
