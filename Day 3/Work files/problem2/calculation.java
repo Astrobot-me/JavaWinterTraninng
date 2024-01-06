@@ -1,8 +1,13 @@
+package p;
 
+import p.Triangle;
 
 abstract class calculation {
-    abstract float calculateArea(float r);
-    abstract float calculatePerimeter(float r);
+    public abstract float calculateArea(float r);
+    public abstract float calculatePerimeter(float r);
+
+    public abstract float calculateArea(float r,float b);
+    public abstract float calculatePerimeter(float r, float b, float c);
 }
 
 class circle extends calculation{
@@ -23,23 +28,6 @@ class circle extends calculation{
 
 }
 
-class Triangle extends calculation{
-   
-    float calculateArea(float a) {
-     float l=7.9f, b=5.0f;
-     float area;
-     area = 0.5f*(a*b);
-     return area;  
-    }
-
-    float calculatePerimeter(float a) {
-     float ab=7.9f, b=5.0f, c=6.7f;
-     float perimeter;
-     perimeter = a+b+c;
-     return perimeter;  
-    }
-
-}
 
 class Main{
 

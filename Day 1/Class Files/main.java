@@ -1,7 +1,7 @@
 class Car
 {
 
-Main() //member - function- method
+void Main() //member - function- method
 {
 
 //create object of class Car
