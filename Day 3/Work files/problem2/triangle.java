@@ -2,7 +2,7 @@ package p;
 
 import p.calculation;
 
-class Triangle extends calculation{
+public class Triangle extends calculation{
    
     public float calculateArea(float l,float b) {
     //  float l=7.9f, b=5.0f;
