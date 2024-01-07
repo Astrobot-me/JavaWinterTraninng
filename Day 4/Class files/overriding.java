@@ -20,6 +20,8 @@ class overridding extends overridedemo {//no of arguments, return type of method
     
     public static void main(String[] args) {
         overridding ov = new overridding();
+        overridedemo oc = new overridedemo();
+        oc.draw(0);
         ov.draw(0); 
     }
 }
