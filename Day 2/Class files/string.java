@@ -44,6 +44,7 @@ class Strdemo {
 
         String r = "";
         String v = "";
+        int x=0;
 
         r = sc.nextLine();//whole line
         v = sc.next();//single word

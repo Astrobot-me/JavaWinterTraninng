@@ -1,5 +1,5 @@
 import java.awt.Color;
-import java.awt.Font;
+import java.awt.Font;//font and Color are SUbpackages of
 
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
@@ -8,6 +8,7 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
+import javax.swing.JPasswordField;
 import javax.swing.JRadioButton;
 import javax.swing.JTextField;
 
@@ -24,6 +25,7 @@ public class swingdemo {
     JRadioButton r1,r2;
     JCheckBox cb1,cb2;
     ButtonGroup bg;
+    JPasswordField p1;
 
 
     swingdemo(){
@@ -54,7 +56,7 @@ public class swingdemo {
         l5.setFont(new Font("Helvetica",Font.BOLD,18));
         
         t1 = new JTextField(30);
-        t2 = new JTextField(30);
+        p1 = new JPasswordField(30);
         
         b1 = new JButton("Sign in");
         b1.setFont(new Font("Courier New",Font.BOLD,22));
@@ -76,7 +78,7 @@ public class swingdemo {
         p.add(l2);
         p.add(t1);
         p.add(l3);
-        p.add(t2);
+        p.add(p1);
         
         p.add(l4);
         p.add(c1);
