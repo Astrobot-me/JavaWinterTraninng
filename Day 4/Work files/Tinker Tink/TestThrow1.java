@@ -3,7 +3,7 @@ import java.io.IOException;
 
 public class TestThrow1{   
     //function to check if person is eligible to vote or not   
-    public static void validate(int age)throws IOException  {  
+    public void validate(int age)throws IOException  {  
         if(age<18) {  
             //throw Arithmetic exception if not eligible to vote  
             throw new RuntimeException("Person is not eligible to vote");    
@@ -14,7 +14,9 @@ public class TestThrow1{
         }  
     }  
     //main method  
-    public static void main(String args[]){  
+    public static void main(String args[]) throws IOException{  
+
+        TestThrow1 t = new TestThrow1();
         //calling the function  
         // try{
         //     TestThrow1.validate(21);
@@ -23,7 +25,7 @@ public class TestThrow1{
         //         System.err.println(q);
         //         // q.printStackTrace();
         //     }
-        TestThrow1.validate(21);
+        t.validate(21);
         System.out.println("rest of the code...");    
   }    
 }    
