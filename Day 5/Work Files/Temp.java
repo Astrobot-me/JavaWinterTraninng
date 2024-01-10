@@ -84,7 +84,7 @@ class Temp implements ActionListener {
                 result_celcius.setText("");  
                 kelvin.setText(String.valueOf(r+273)+" Kelvin");   
             }
-        }catch(Exception ae){
+        }catch(Exception ae){ 
             result_celcius.setText("No Data Given");
         }
 
