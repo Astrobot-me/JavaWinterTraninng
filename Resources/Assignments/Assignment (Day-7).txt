@@ -1,0 +1,13 @@
+**********************************
+Programming Assignment (Day-7)
+**********************************
+
+1-Write a Java program to create and start multiple threads that increment a shared 
+counter variable concurrently.
+
+2-Write a Java program to create a Date object using the Calendar class.
+
+3-Write a Java program to get the maximum value of the year, month, week, and date 
+from the current date of a default calendar.
+
+4-Write a Java program to get the current time in New York.
