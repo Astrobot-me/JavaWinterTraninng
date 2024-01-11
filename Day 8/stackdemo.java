@@ -17,6 +17,6 @@ class stackdemo {
         // System.out.println(st.peek());
         // st.push(11); // Retuns top element
         System.out.println(st); //Last in First out
-        System.out.println(st.search()));
+        System.out.println(st.search(8));
     }
 }
