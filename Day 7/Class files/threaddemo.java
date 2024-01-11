@@ -7,7 +7,7 @@ class Threaddemo extends Thread { //Inheriting the Thread Class
         try{
             for(int i=0;i<5;i++){
                 System.out.println(i);
-                Thread.sleep(2000);
+                Thread.sleep(2000);//Throws Exception
             }
         }catch(Exception ae){
             System.out.println(ae);
