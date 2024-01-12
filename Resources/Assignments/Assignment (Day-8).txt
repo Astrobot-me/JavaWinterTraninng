@@ -1,0 +1,23 @@
+**********************************
+Programming Assignment (Day-8)
+**********************************
+
+1- Write a Java program to remove the third element from an array list.
+
+2-Write a Java program to copy one array list into another.
+
+3- Write a Java program to reverse elements in an array list.
+
+4-Write a Java program to compare two array lists.
+
+5-Write a Java program to join two array lists.
+
+6-Write a Java program to iterate a linked list in reverse order.
+
+7-Write a Java program to convert a hash set to an array.
+
+8-Write a Java program to clone a tree set list to another tree set.
+
+9-Write a Java program to count the number of elements in a priority queue.
+
+10-Write a Java program to convert a Priority Queue element to string representations.
