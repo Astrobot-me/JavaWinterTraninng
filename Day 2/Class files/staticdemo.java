@@ -1,11 +1,12 @@
-
+import javafx.scene.effect.Light.Spot;
 
 class Staticdemo {
     
     // int c = 0;
     static int c = 0;
     Staticdemo(){
-        c=c+1;
+        c=c+1; //shorthand operator 
+        // c += 1;
         System.out.println(c);
     }
     static{
@@ -16,5 +17,6 @@ class Staticdemo {
         Staticdemo s1 = new Staticdemo();
         Staticdemo s2 = new Staticdemo();
         Staticdemo s3 = new Staticdemo();
+        System.out.println("Hello World!");
     }
 }
